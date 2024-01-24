@@ -3,8 +3,8 @@ TODOs:
 
 - Build Commands
 - Reload Command
-- Configurations
-  - Messages
-  - Default config
+- ~~Configurations~~
+  - ~~Messages~~
+  - ~~Default config~~
 - ~~Hex-Color support~~
 - Protections Events
