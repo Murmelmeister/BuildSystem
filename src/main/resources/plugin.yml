@@ -1,0 +1,17 @@
+main: de.murmelmeister.system.BuildSystem
+name: BuildSystem
+version: ${version}
+api-version: 1.20
+author: Murmelmeister
+description: ${description}
+website: ${url}
+
+commands:
+  buildreload:
+    usage: /buildreload
+    description: Reload the plugin.
+    aliases:
+      - buildrl
+  build:
+    usage: /build [PLAYER]
+    description: Get in or out of the build mode.
