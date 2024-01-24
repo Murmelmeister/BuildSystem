@@ -18,8 +18,8 @@ public final class ReloadCommand extends Commands {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        if (!isCommandEnable(sender, Configs.COMMAND_ENABLE_RELOAD)) return true;
-        if (!hasPermission(sender, Configs.PERMISSION_RELOAD)) return true;
+        if (isCommandEnable(sender, Configs.COMMAND_ENABLE_RELOAD)) return true;
+        if (hasPermission(sender, Configs.PERMISSION_RELOAD)) return true;
 
         config.create();
         message.create();

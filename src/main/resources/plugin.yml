@@ -8,7 +8,10 @@ website: ${url}
 
 commands:
   buildreload:
-    usage: /<command>
+    usage: /buildreload
     description: Reload the plugin.
     aliases:
       - buildrl
+  build:
+    usage: /build [PLAYER]
+    description: Get in or out of the build mode.

@@ -1,6 +1,7 @@
 package de.murmelmeister.system.command;
 
 import de.murmelmeister.system.BuildSystem;
+import de.murmelmeister.system.command.commands.BuildCommand;
 import de.murmelmeister.system.command.commands.ReloadCommand;
 import org.bukkit.command.TabExecutor;
 
@@ -14,6 +15,7 @@ import java.util.Objects;
 public record CommandManager(BuildSystem instance) {
     public void register() {
         addCommand("buildreload", new ReloadCommand(instance));
+        addCommand("build", new BuildCommand(instance));
     }
 
     private void addCommand(String name, TabExecutor executor) {
