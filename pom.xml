@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.murmelmeister.system</groupId>
-    <artifactId>Build</artifactId>
+    <artifactId>BuildSystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Build</name>
+    <name>BuildSystem</name>
     <description>A Plugin build system for Minecraft Servers.</description>
     <url>https://www.youtube.com/Murmelmeister</url>
 

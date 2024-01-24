@@ -1,6 +1,6 @@
 package de.murmelmeister.system.util.configuration;
 
-import de.murmelmeister.system.Build;
+import de.murmelmeister.system.BuildSystem;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.slf4j.Logger;
 
@@ -22,7 +22,7 @@ public final class FileUtil {
      */
     public static File create(Logger logger, String fileName) {
         String name = fileName + ".yml";
-        String path = "./plugins/" + Build.class.getSimpleName();
+        String path = "./plugins/" + BuildSystem.class.getSimpleName();
         File file = new File(path, name);
         File parent = file.getParentFile();
         if (!parent.exists()) {

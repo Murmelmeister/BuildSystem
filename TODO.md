@@ -2,7 +2,7 @@ TODOs:
 # 0.0.1 Version
 
 - Build Commands
-- Reload Command
+- ~~Reload Command~~
 - ~~Configurations~~
   - ~~Messages~~
   - ~~Default config~~

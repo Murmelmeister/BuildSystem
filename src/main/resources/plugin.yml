@@ -1,7 +1,14 @@
-main: de.murmelmeister.system.Build
-name: Build
+main: de.murmelmeister.system.BuildSystem
+name: BuildSystem
 version: ${version}
 api-version: 1.20
 author: Murmelmeister
 description: ${description}
 website: ${url}
+
+commands:
+  buildreload:
+    usage: /<command>
+    description: Reload the plugin.
+    aliases:
+      - buildrl
