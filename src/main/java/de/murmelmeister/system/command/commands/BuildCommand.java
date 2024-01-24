@@ -4,6 +4,7 @@ import de.murmelmeister.system.BuildSystem;
 import de.murmelmeister.system.command.Commands;
 import de.murmelmeister.system.util.configuration.Configs;
 import de.murmelmeister.system.util.configuration.Messages;
+import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -29,9 +30,11 @@ public final class BuildCommand extends Commands {
                 UUID uuid = player.getUniqueId();
                 if (lists.getBuildMode().contains(uuid)) {
                     lists.getBuildMode().remove(uuid);
+                    player.setGameMode(GameMode.ADVENTURE); // In lobbies is the adventure mode better than the survival mode.
                     sendMessage(player, message.get(Messages.COMMAND_BUILD_MODE_USE_OFF));
                 } else {
                     lists.getBuildMode().add(uuid);
+                    player.setGameMode(GameMode.CREATIVE);
                     sendMessage(player, message.get(Messages.COMMAND_BUILD_MODE_USE_ON));
                 }
             }
@@ -44,10 +47,12 @@ public final class BuildCommand extends Commands {
                 UUID uuid = target.getUniqueId();
                 if (lists.getBuildMode().contains(uuid)) {
                     lists.getBuildMode().remove(uuid);
+                    target.setGameMode(GameMode.ADVENTURE); // In lobbies is the adventure mode better than the survival mode.
                     sendMessage(target, message.get(Messages.COMMAND_BUILD_MODE_USE_OFF));
                     sendMessage(sender, message.get(Messages.COMMAND_BUILD_MODE_OTHERS_OFF).replace("[PLAYER]", target.getName()));
                 } else {
                     lists.getBuildMode().add(uuid);
+                    target.setGameMode(GameMode.CREATIVE);
                     sendMessage(target, message.get(Messages.COMMAND_BUILD_MODE_USE_ON));
                     sendMessage(sender, message.get(Messages.COMMAND_BUILD_MODE_OTHERS_ON).replace("[PLAYER]", target.getName()));
                 }

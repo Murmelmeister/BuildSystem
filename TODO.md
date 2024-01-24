@@ -7,4 +7,4 @@ TODOs:
   - ~~Messages~~
   - ~~Default config~~
 - ~~Hex-Color support~~
-- Protections Events
+- ~~Protections Events~~
