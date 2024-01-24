@@ -6,5 +6,5 @@ TODOs:
 - Configurations
   - Messages
   - Default config
-- Hex-Color support
+- ~~Hex-Color support~~
 - Protections Events
