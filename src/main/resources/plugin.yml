@@ -1,0 +1,7 @@
+main: de.murmelmeister.system.Build
+name: Build
+version: ${version}
+api-version: 1.20
+author: Murmelmeister
+description: ${description}
+website: ${url}
